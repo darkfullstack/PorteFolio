@@ -30,17 +30,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container"> 
          <div class="header-top">
       		 <div class="logo">
-				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+				<a href="index.html"><img src="../above/images/logo.png" alt=""/></a>
 			 </div>
 		   <div class="top-menu">
 		   	<span class="menu"> </span>
 			<ul>
 			 	<nav class="cl-effect-5">
-				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
-				<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>
-				<li><a href="#work" class="scroll"><span data-hover="work"><span>work</span></a></li>
-				<li><a href="#services" class="scroll"><span data-hover="services">services</span></a></li>
-				<li><a href="#contact" class="scroll"><span data-hover="contact">contact</span></a></li>
+				<li><a class="active" href="index.html"><span data-hover="Home">Maison</span></a></li>
+				<li><a href="#about" class="scroll"><span data-hover="about">A propos</span></a></li>
+				<li><a href="#work" class="scroll"><span data-hover="work"><span>Jobs</span></a></li>
+				<li><a href="#services" class="scroll"><span data-hover="services">Services</span></a></li>
+				<li><a href="#contact" class="scroll"><span data-hover="contact">Contact</span></a></li>
 				</nav>
 			 </ul>
 			 </div>
@@ -59,27 +59,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <article style="position: absolute; width: 100%; opacity: 0;"> 
 				   	<div class="banner-wrap">
 				   	       	<div class="banner_center">
-				   		 		<h1>hello world,</h1> 
-				   		 		<h2>i am <span>graphic & web designer</span></h2>
-				   		 		<h2>from morocco</h2>
+				   		 		<h1>Bonjour,</h1> 
+				   		 		<h2>Je suis <span>Developpeur & Web Designer</span></h2>
+				   		 		
 				   		 		</div>
 				   		 </div>
 					</article>
 				   <article style="position: relative; width: 100%; opacity: 1;"> 
 				   	   	<div class="banner-wrap">
-				   	      <div class="banner_center">
-				   		 		<h1>Content here,</h1> 
-				   		 		<h2>Lorem <span>graphic &  designer</span></h2>
-				   		 		<h2>Contrary</h2>
+							  <div class="banner_center">
+				   		 		<h1>Bonjour,</h1> 
+				   		 		<h2>Je suis <span>Developpeur & Web Designer</span></h2>
+				   		 		
 				   		 		</div>
 				   		  </div>
 				   </article>
 				   <article style="position: absolute; width: 100%; opacity: 0;">
 				   	  	<div class="banner-wrap">
-				   	       <div class="banner_center">
-				   		 		<h1>Lorem Ipsum ,</h1> 
-				   		 		<h2>Contrary to <span>&  designer</span></h2>
-				   		 		<h2>reproduced below</h2>
+							 <div class="banner_center">
+				   		 		<h1>Bonjour,</h1> 
+				   		 		<h2>Je suis <span>Developpeur & Web Designer</span></h2>
+				   		 		
 				   		 		</div>
 				   		 </div>
 					 </article>
@@ -97,138 +97,60 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="about-section" id="about" id="about">
 	<div class="container">
 		<div class="about-header">
-			<h3>about</h3>
+			<h3>A propos</h3>
 			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt=""/>
+			<img src="../above/images/devcov.jpg" alt="" width="180" height="180"/>
 			</div>
 			<div class="about-text">
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p> 
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. . </p>
+		 		<p>
+				Mon job est donc de créer des produits pour le web : cela peut aller d’une simple page vitrine à une application web.<br />
+				Je peux porter plusieurs casquettes pour le même projet, du cahier des charges du client à la conception et modélisation,<br/>
+				en passant par le développement des API (Application Programming Interface) en back-end,<br />
+				la création des pages avec l’intégration du design, ou encore m’occuper de la mise en place du système et/ou des serveurs.
+				</p>
 			</div>
 			<div class="clearfix"></div>
 			</div>
 			<div class="about-sectiongrids">
 				<div class="col-md-6 about-leftgrid">
+				<?php for($i=0; $i < count($skills->getSkills())/2 ; $i++){?>
 					<div class="polls">
 					<div class="poll">
 						<div class="poll-desc">
-							<h4>Graphic Design</h4>
+							<h4><?= $skills->getSkills()[$i]->getType(); ?></h4>
 						</div>
 						<div class="percentage">
-							<p>75%</p>
+							<p><?= $skills->getSkills()[$i]->getPercent(); ?>%</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Ui/Ux</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Logo Design</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Html/Css</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-
-	</div>
+			            <div style="width:<?=$skills->getSkills()[$i]->getPercent(); ?>%"> </div>
+	                    </div>
+	            </div>
+				<?php } ?>
+			</div>
 	<div class="col-md-6 about-rightgrid">
-		<div class="polls">
+		
+		<?php for($i=count($skills->getSkills())/2; $i < count($skills->getSkills()) ; $i++){?>
+					<div class="polls">
 					<div class="poll">
 						<div class="poll-desc">
-							<h4>web design</h4>
+							<h4><?= $skills->getSkills()[$i]->getType(); ?></h4>
 						</div>
 						<div class="percentage">
-							<p>75%</p>
+							<p><?= $skills->getSkills()[$i]->getPercent(); ?>%</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
 				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>branding</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Photography</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-	                      <div class="polls">
-					<div class="poll">
-						<div class="poll-desc">
-							<h4>Jquery</h4>
-						</div>
-						<div class="percentage">
-							<p>75%</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="skills">
-			              	<div style="width:75%"> </div>
-	                      </div>
-	                      </div>
-		</div>
-		<div class="clearfix"></div>
+			            <div style="width:<?=$skills->getSkills()[$i]->getPercent(); ?>%"> </div>
+	                    </div>
+	            </div>
+				<?php } ?>
 	</div>
 	<div class="arrow1">
-	<a href="#work" class="scroll"><img src="images/arrow1.png" alt=""/></a>
+	<a href="#work" class="scroll"><img src="../above/images/arrow1.png" alt=""/></a>
 					</div>
 	</div>
 	</div>
@@ -236,7 +158,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="works-section" id="work" id="work">
 	   <div class="works-header">
 			<h3>works</h3>
-				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+			<p>Au quotidien, quelques uns de mes outils sont:</p>
+			<ul>
+				<li class="resp-tab-item">VSCode, un IDE (Integrated Development Environment), soit un éditeur de texte avec des fonctionnalités avancées pour le développement</li>
+				<li class="resp-tab-item">Laravel, Lumen et autres frameworks logiciels.</li><br />
+				<li class="resp-tab-item">Composer, NPM : des gestionnaires de dépendance logicielle</li><br />
+				<li class="resp-tab-item">Git, un VCS (Version, Control, System)</li><br />
+				<li class="resp-tab-item">PHPUNIT, l'utilisation de test unitaire pour un développement plus sūr</li><br />
+			</ul>
 		</div>
 		<div class="portfolio-section-bottom-row" id="portfolio">
 			<div class="container">
@@ -260,164 +189,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									});
 								</script>
 							<!-- Portfolio Ends Here -->
-						<div class="sap_tabs">
-							<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-								  <ul class="resp-tabs-list">
-									  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Branding</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Print</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Web design</span></li>
-									  <li class="resp-tab-item" aria-controls="tab_item-4" role="tab"><span>Photography</span></li>
-									  <div class="clearfix"></div>
-								  </ul>	
-								<div id="portfoliolist">
-									<div class="resp-tabs-container">
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-3.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-4.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-5.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-5.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-6.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-6.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-7.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-7.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-8.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-8.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="clearfix"></div>	
-											</div>
-																				 
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-											<div class="tab_img">
-												<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-5.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-5.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-6.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-6.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-7.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-7.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-8.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-8.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-													<div class="clearfix"></div>	
-											</div>	 	        					 
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-											
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-3.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-3.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-4.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-4.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>		        					 
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-2.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>	
-										</div>
-										<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-4">
-											<div class="tab_img">
-													<div class="col-md-3 img-top grid_box">
-														<a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
-															  <img src="images/pic-1.jpg" class="img-responsive" alt="">
-															  <span class="zoom-icon"></span> 
-														</a>
-													</div>
-													
-														<div class="clearfix"></div>
-											</div>	
-										</div>										
-									</div>	
-								</div>
-							</div>
-						</div>				
+						
  
 				<div class="arrow">
-					<a href="#services" class="scroll"><img src="images/arrow.png" alt=""/></a>
+					<a href="#services" class="scroll"><img src="../above/images/arrow.png" alt=""/></a>
 				</div>
 			</div>
 		</div>
@@ -426,29 +201,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="services-section" id="services">
 			<div class="container"> 
 			<div class="services-header">
-				<h3>services</h3>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+				<h3>Services</h3>
+					
 			</div>
 			<div class="services-sectiongrids">
-				<div class="col-md-4 services-grid">
-					<img src="images/img1.png" alt=""/>
+			<div class="col-md-4 services-grid">
+					<img src="../above/images/img1.png" alt=""/>
 					<h4>webdesign</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Création du design , selon cahier des charges</p>
+			</div>
+			<div class="col-md-4 services-grid">
+				<img src="../above/images/pic-5.jpg" alt="" width="128" height="128"/>
+					<h4>TDD</h4>
+					<p>Réalisation de test unitaires pour une meilleur gestion de votre projet.</p>
 				</div>
+				
 				<div class="col-md-4 services-grid">
-					<img src="images/img2.png" alt=""/>
-					<h4>print design</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
-				</div>
-				<div class="col-md-4 services-grid">
-					<img src="images/img3.png" alt=""/>
+					<img src="../above/images/img3.png" alt=""/>
 					<h4>web development</h4>
-					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p>
+					<p>Mise en application de votre projet web</p>
 				</div>
 				<div class="clearfix"></div>
 				<div class="arrow1">
-					<a href="#contact" class="scroll"><img src="images/arrow1.png" alt=""/></a>
-					</div>
+					<a href="#contact" class="scroll"><img src="../above/images/arrow1.png" alt=""/></a>
+			</div>
 		</div>
 		</div>
 		</div>
@@ -491,8 +267,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</form>
 			</div>
 			<div class="footer-bottom">
-
-					<p>&copy; 2015 Onepage . All rights  Reserved | Template by<a href="http://templatestock.com" target="target_blank">Template Stock</a></p>
 
 					</div>
 					<script type="text/javascript">
