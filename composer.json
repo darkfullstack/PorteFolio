@@ -1,0 +1,12 @@
+{
+    "name": "payet/porte-folio",
+    "require": {
+        "mikecao/flight": "^1.3"
+    },
+    "authors": [
+        {
+            "name": "Payet Harold",
+            "email": "java.prog.974@gmail.com"
+        }
+    ]
+}
