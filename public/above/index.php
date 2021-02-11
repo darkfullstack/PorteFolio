@@ -247,21 +247,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="#"><i class="icon8"></i></a>
 			</div>
 			<div class="contact">
-				<form>
+				<form action="/" method="post">
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value=" name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' name';}">
+						<input name="name" type="text" class="text" value=" nom" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name';}">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
+						<input type="text" class="text" value="e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'email';}">
 					</div>
 					<div class="col-md-4 contactgrid">
-						<input type="text" class="text" value="phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
+						<input type="text" class="text" value="téléphone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'phone';}">
 					</div>
 					<div class="col-md-8 contactgrid1">
-						<textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+						<textarea onfocus="if(this.value == 'Votre message') this.value='';" onblur="if(this.value == '') this.value='Votre Message';" >Your Message</textarea>
 					</div>
 					<div class="col-md-4 contactgrid2">
-						<input type="submit" value="[send message]">
+						<input type="submit" value="[envoyer mon message]">
 					</div>
 				   <div class="clearfix"></div>
 				</form>
@@ -271,14 +271,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<script type="text/javascript">
 						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
 							
 							$().UItoTop({ easingType: 'easeOutQuart' });
 							

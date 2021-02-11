@@ -11,6 +11,28 @@ class ComposerStaticInit1b90241edd8b613baba3c2d9724c0257
         '5b7d984aab5ae919d3362ad9588977eb' => __DIR__ . '/..' . '/mikecao/flight/flight/Flight.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'E' => 
+        array (
+            'Envms\\FluentPDO\\' => 16,
+        ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Envms\\FluentPDO\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/envms/fluentpdo/src',
+        ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app',
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
@@ -18,6 +40,8 @@ class ComposerStaticInit1b90241edd8b613baba3c2d9724c0257
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1b90241edd8b613baba3c2d9724c0257::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1b90241edd8b613baba3c2d9724c0257::$prefixDirsPsr4;
             $loader->classMap = ComposerStaticInit1b90241edd8b613baba3c2d9724c0257::$classMap;
 
         }, null, ClassLoader::class);
